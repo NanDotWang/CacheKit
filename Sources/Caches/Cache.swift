@@ -38,7 +38,7 @@ final public class Cache {
     private let name: String
     
     /// Store cached file to disk or not, default is false, only cache to memory
-    private var toDisk: Bool = false
+    var toDisk: Bool = false
     
     /// Memory cache
     /// * Use NSCache under the hood, so it is thread safe
@@ -61,7 +61,7 @@ final public class Cache {
     }
     
     /// Store object into cache
-    public func setObject<T: Codable>(_ object: T, for key: String, completion: @escaping (Error?) -> Void) {
+    public func setObject<T: Codable>(_ object: T, for key: String) {
         
         /// Use MD5 hashed key as cache key
         let cacheKey = MD5(key)
@@ -71,44 +71,47 @@ final public class Cache {
         
         /// Save object into disk if indicated
         if toDisk {
-            queue.async { [weak self] in
+            queue.sync { [weak self] in
                 guard let `self` = self else { return }
                 do {
                     try self.diskCache.setObject(object, for: cacheKey)
-                    completion(nil)
                 } catch {
-                    completion(error)
+                    debuggingPrint("⚠️ Failed to cache newly downloaded object with error: \(error.localizedDescription)")
                 }
             }
         }
     }
     
     /// Get object from cache
-    public func object<T: Codable>(for key: String, completion: @escaping (Result<T>) -> Void) {
+    public func object<T: Codable>(for key: String) -> T? {
         
         /// Use MD5 hashed key as cache key
         let cacheKey = MD5(key)
         
-        do {
-            let object: T = try memoryCache.object(for: cacheKey)
-            completion(.value(object))
+        /// Get object from memory cache first
+        if let object: T = try? memoryCache.object(for: cacheKey) {
             debuggingPrint("😼 from memory")
-        } catch {
-            queue.async { [weak self] in
-                guard let `self` = self else { return }
-                do {
-                    let object: T = try self.diskCache.object(for: cacheKey)
-                    /// If object exists in disk but not memory
-                    /// after retrieving it from disk, store it in memory cache
-                    /// so next time this object can be retrieved from memory cache directly.
-                    self.memoryCache.setObject(object, for: cacheKey)
-                    completion(.value(object))
-                    debuggingPrint("📀 from disk")
-                } catch {
-                    completion(.error(error))
-                }
-            }
+            return object
         }
+        
+        /// Get object from disk cache
+        var object: T? = nil
+        queue.sync { [weak self] in
+            guard let `self` = self else { return }
+            object = try? self.diskCache.object(for: cacheKey)
+        }
+        
+        if object != nil {
+            /// If object exists in disk but not memory
+            /// after retrieving it from disk, store it in memory cache
+            /// so next time this object can be retrieved from memory cache directly.
+            memoryCache.setObject(object, for: cacheKey)
+            debuggingPrint("📀 from disk")
+            return object
+        }
+
+        debuggingPrint("⚠️ object does not exist in memory, nor disk")
+        return object
     }
     
     /// Remove object from cache

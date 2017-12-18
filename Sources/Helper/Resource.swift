@@ -18,5 +18,5 @@ public protocol Resource {
     var cacheKey: String { get }
     
     /// Each resource should provide a function to parse raw Data into a Codable type for cache purpose
-    func parse<T: Codable>(_ data: Data, with options: [Option]) -> T?
+    func parse<T: Codable>(_ data: Data) -> T?
 }

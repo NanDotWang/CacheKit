@@ -11,15 +11,19 @@ import Foundation
 /// Retrieve cache task, used to cancel downloading task
 final public class RetrieveCacheTask {
     
-    var dataTask: URLSessionDataTask? = nil
+    private let dataTask: URLSessionDataTask
+    
+    init(with dataTask: URLSessionDataTask) {
+        self.dataTask = dataTask
+    }
     
     public func cancel() {
-        dataTask?.cancel()
+        dataTask.cancel()
     }
     public func suspend() {
-        dataTask?.suspend()
+        dataTask.suspend()
     }
     public func resume() {
-        dataTask?.resume()
+        dataTask.resume()
     }
 }

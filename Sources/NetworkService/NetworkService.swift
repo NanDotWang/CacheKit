@@ -20,7 +20,7 @@ public final class NetworkService {
     }
     
     /// Load resouce from network
-    public func load<T: Codable>(resource: Resource, task: RetrieveCacheTask, options: [Option], completion: @escaping (Result<T>) -> Void) {
+    public func load<T: Codable>(resource: Resource, completion: @escaping (Result<T>) -> Void) -> RetrieveCacheTask {
         
         /// Disable URLCache as we want to have more control of what get cached or not
         /// especially if we add a file cache
@@ -36,9 +36,7 @@ public final class NetworkService {
                     completion(.error(NetworkServiceError.noData))
                     return
                 }
-                guard let codable: T = resource.parse(data, with: options) else {
-                    /// There is an invalid url in the response json with `asdf` in it:
-                    /// https://s3.amazonaws.com/work-project-image-loading/10284839893_72642asdf63_z.jpg
+                guard let codable: T = resource.parse(data) else {
                     completion(.error(NetworkServiceError.parseDataError))
                     return
                 }
@@ -46,8 +44,8 @@ public final class NetworkService {
             }
         }
         dataTask.resume()
-        /// Save dataTask for cancellations or other controls
-        task.dataTask = dataTask
+        /// Return dataTask for cancellations or other controls
+        return RetrieveCacheTask(with: dataTask)
     }
 }
 
