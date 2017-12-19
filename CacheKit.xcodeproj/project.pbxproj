@@ -55,10 +55,10 @@
 		28867E521FD531C500439260 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28867E301FD531C500439260 /* Helper.swift */; };
 		28867E531FD531C500439260 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28867E301FD531C500439260 /* Helper.swift */; };
 		28867E541FD531C500439260 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28867E301FD531C500439260 /* Helper.swift */; };
-		28867E5B1FD531E500439260 /* CacheProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28867E561FD531E500439260 /* CacheProvider.swift */; };
-		28867E5C1FD531E500439260 /* CacheProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28867E561FD531E500439260 /* CacheProvider.swift */; };
-		28867E5D1FD531E500439260 /* CacheProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28867E561FD531E500439260 /* CacheProvider.swift */; };
-		28867E5E1FD531E500439260 /* CacheProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28867E561FD531E500439260 /* CacheProvider.swift */; };
+		28867E5B1FD531E500439260 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28867E561FD531E500439260 /* CacheManager.swift */; };
+		28867E5C1FD531E500439260 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28867E561FD531E500439260 /* CacheManager.swift */; };
+		28867E5D1FD531E500439260 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28867E561FD531E500439260 /* CacheManager.swift */; };
+		28867E5E1FD531E500439260 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28867E561FD531E500439260 /* CacheManager.swift */; };
 		28867E621FD5322400439260 /* TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28867E5F1FD5322300439260 /* TestHelper.swift */; };
 		28867E631FD5322400439260 /* TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28867E5F1FD5322300439260 /* TestHelper.swift */; };
 		28867E641FD5322400439260 /* TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28867E5F1FD5322300439260 /* TestHelper.swift */; };
@@ -110,7 +110,7 @@
 		28867E2B1FD531C400439260 /* Resource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
 		28867E2D1FD531C400439260 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		28867E301FD531C500439260 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
-		28867E561FD531E500439260 /* CacheProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheProvider.swift; sourceTree = "<group>"; };
+		28867E561FD531E500439260 /* CacheManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
 		28867E5F1FD5322300439260 /* TestHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestHelper.swift; sourceTree = "<group>"; };
 		28867E601FD5322400439260 /* MemoryCacheTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoryCacheTests.swift; sourceTree = "<group>"; };
 		28867E611FD5322400439260 /* DiskCacheTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiskCacheTests.swift; sourceTree = "<group>"; };
@@ -257,7 +257,7 @@
 		8933C7811EB5B7E0000D00A4 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				28867E561FD531E500439260 /* CacheProvider.swift */,
+				28867E561FD531E500439260 /* CacheManager.swift */,
 				28867DFD1FD5318400439260 /* Caches */,
 				28867DF21FD5315300439260 /* NetworkService */,
 				28867E1C1FD531A500439260 /* Configurations */,
@@ -578,7 +578,7 @@
 				28867E351FD531C500439260 /* MD5.swift in Sources */,
 				28867E0C1FD5319300439260 /* MemoryCache.swift in Sources */,
 				28867E231FD531B300439260 /* MemoryConfiguration.swift in Sources */,
-				28867E5B1FD531E500439260 /* CacheProvider.swift in Sources */,
+				28867E5B1FD531E500439260 /* CacheManager.swift in Sources */,
 				28867E081FD5319300439260 /* DiskCache.swift in Sources */,
 				28867E511FD531C500439260 /* Helper.swift in Sources */,
 				28867E451FD531C500439260 /* Result.swift in Sources */,
@@ -608,7 +608,7 @@
 				28867E371FD531C500439260 /* MD5.swift in Sources */,
 				28867E0E1FD5319300439260 /* MemoryCache.swift in Sources */,
 				28867E251FD531B300439260 /* MemoryConfiguration.swift in Sources */,
-				28867E5D1FD531E500439260 /* CacheProvider.swift in Sources */,
+				28867E5D1FD531E500439260 /* CacheManager.swift in Sources */,
 				28867E0A1FD5319300439260 /* DiskCache.swift in Sources */,
 				28867E531FD531C500439260 /* Helper.swift in Sources */,
 				28867E471FD531C500439260 /* Result.swift in Sources */,
@@ -628,7 +628,7 @@
 				28867E381FD531C500439260 /* MD5.swift in Sources */,
 				28867E0F1FD5319300439260 /* MemoryCache.swift in Sources */,
 				28867E261FD531B300439260 /* MemoryConfiguration.swift in Sources */,
-				28867E5E1FD531E500439260 /* CacheProvider.swift in Sources */,
+				28867E5E1FD531E500439260 /* CacheManager.swift in Sources */,
 				28867E0B1FD5319300439260 /* DiskCache.swift in Sources */,
 				28867E541FD531C500439260 /* Helper.swift in Sources */,
 				28867E481FD531C500439260 /* Result.swift in Sources */,
@@ -648,7 +648,7 @@
 				28867E361FD531C500439260 /* MD5.swift in Sources */,
 				28867E0D1FD5319300439260 /* MemoryCache.swift in Sources */,
 				28867E241FD531B300439260 /* MemoryConfiguration.swift in Sources */,
-				28867E5C1FD531E500439260 /* CacheProvider.swift in Sources */,
+				28867E5C1FD531E500439260 /* CacheManager.swift in Sources */,
 				28867E091FD5319300439260 /* DiskCache.swift in Sources */,
 				28867E521FD531C500439260 /* Helper.swift in Sources */,
 				28867E461FD531C500439260 /* Result.swift in Sources */,
