@@ -39,7 +39,7 @@ struct DataProvider {
     }
     
     func loadCats(completion: @escaping ([Photo]) -> Void) {
-        let url = URL(string: "https://api.unsplash.com/collections/861748/photos?client_id=35c6c10b4fa8d6392e5700178bdf30abe8ca1087bf190232c7079f955877f1ae&per_page=30")!
+        let url = URL(string: "https://nandotwang.github.io/CacheKit/Example/cats.json")!
         URLSession.shared.dataTask(with: url) { (data, _, error) in
             switch error {
             case .some(let error):
