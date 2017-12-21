@@ -70,3 +70,9 @@ func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forR
 ## Todo list
 - [ ] **Memory eviction**: Implement memory evictions upon memory warning notifications.
 - [ ] **Disk eviction**: Implement expirations for disk cache.
+
+## Credits
+Thanks for those awesome open source projects:
+- [Cache](https://github.com/hyperoslo/Cache)
+- [Imaginary](https://github.com/hyperoslo/Imaginary)
+- [Kingfisher](https://github.com/onevcat/Kingfisher)
