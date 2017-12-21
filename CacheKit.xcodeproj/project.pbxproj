@@ -68,6 +68,22 @@
 		28867E681FD5322400439260 /* DiskCacheTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28867E611FD5322400439260 /* DiskCacheTests.swift */; };
 		28867E691FD5322400439260 /* DiskCacheTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28867E611FD5322400439260 /* DiskCacheTests.swift */; };
 		28867E6A1FD5322400439260 /* DiskCacheTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28867E611FD5322400439260 /* DiskCacheTests.swift */; };
+		28AB29441FEAB00300A06F68 /* CodableImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AB29411FEAB00300A06F68 /* CodableImage.swift */; };
+		28AB29451FEAB00300A06F68 /* CodableImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AB29411FEAB00300A06F68 /* CodableImage.swift */; };
+		28AB29461FEAB00300A06F68 /* CodableImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AB29411FEAB00300A06F68 /* CodableImage.swift */; };
+		28AB29471FEAB00300A06F68 /* CodableImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AB29411FEAB00300A06F68 /* CodableImage.swift */; };
+		28AB29481FEAB00300A06F68 /* UITableViewCell+CacheKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AB29421FEAB00300A06F68 /* UITableViewCell+CacheKit.swift */; };
+		28AB29491FEAB00300A06F68 /* UITableViewCell+CacheKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AB29421FEAB00300A06F68 /* UITableViewCell+CacheKit.swift */; };
+		28AB294A1FEAB00300A06F68 /* UITableViewCell+CacheKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AB29421FEAB00300A06F68 /* UITableViewCell+CacheKit.swift */; };
+		28AB294B1FEAB00300A06F68 /* UITableViewCell+CacheKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AB29421FEAB00300A06F68 /* UITableViewCell+CacheKit.swift */; };
+		28AB294C1FEAB00300A06F68 /* URL+Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AB29431FEAB00300A06F68 /* URL+Resource.swift */; };
+		28AB294D1FEAB00300A06F68 /* URL+Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AB29431FEAB00300A06F68 /* URL+Resource.swift */; };
+		28AB294E1FEAB00300A06F68 /* URL+Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AB29431FEAB00300A06F68 /* URL+Resource.swift */; };
+		28AB294F1FEAB00300A06F68 /* URL+Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AB29431FEAB00300A06F68 /* URL+Resource.swift */; };
+		28AB29511FEAB0B200A06F68 /* UIImageView+CacheKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AB29501FEAB0B100A06F68 /* UIImageView+CacheKit.swift */; };
+		28AB29521FEAB0B200A06F68 /* UIImageView+CacheKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AB29501FEAB0B100A06F68 /* UIImageView+CacheKit.swift */; };
+		28AB29531FEAB0B200A06F68 /* UIImageView+CacheKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AB29501FEAB0B100A06F68 /* UIImageView+CacheKit.swift */; };
+		28AB29541FEAB0B200A06F68 /* UIImageView+CacheKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AB29501FEAB0B100A06F68 /* UIImageView+CacheKit.swift */; };
 		52D6D9871BEFF229002C0205 /* CacheKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6D97C1BEFF229002C0205 /* CacheKit.framework */; };
 		DD7502881C68FEDE006590AF /* CacheKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6DA0F1BF000BD002C0205 /* CacheKit.framework */; };
 		DD7502921C690C7A006590AF /* CacheKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6D9F01BEFFFBE002C0205 /* CacheKit.framework */; };
@@ -114,6 +130,10 @@
 		28867E5F1FD5322300439260 /* TestHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestHelper.swift; sourceTree = "<group>"; };
 		28867E601FD5322400439260 /* MemoryCacheTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoryCacheTests.swift; sourceTree = "<group>"; };
 		28867E611FD5322400439260 /* DiskCacheTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiskCacheTests.swift; sourceTree = "<group>"; };
+		28AB29411FEAB00300A06F68 /* CodableImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodableImage.swift; sourceTree = "<group>"; };
+		28AB29421FEAB00300A06F68 /* UITableViewCell+CacheKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+CacheKit.swift"; sourceTree = "<group>"; };
+		28AB29431FEAB00300A06F68 /* URL+Resource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+Resource.swift"; sourceTree = "<group>"; };
+		28AB29501FEAB0B100A06F68 /* UIImageView+CacheKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+CacheKit.swift"; sourceTree = "<group>"; };
 		52D6D97C1BEFF229002C0205 /* CacheKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CacheKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52D6D9861BEFF229002C0205 /* CacheKit-iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CacheKit-iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		52D6D9E21BEFFF6E002C0205 /* CacheKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CacheKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -221,6 +241,17 @@
 			path = Helper;
 			sourceTree = "<group>";
 		};
+		28AB29401FEAAFDE00A06F68 /* Image caches */ = {
+			isa = PBXGroup;
+			children = (
+				28AB29431FEAB00300A06F68 /* URL+Resource.swift */,
+				28AB29411FEAB00300A06F68 /* CodableImage.swift */,
+				28AB29501FEAB0B100A06F68 /* UIImageView+CacheKit.swift */,
+				28AB29421FEAB00300A06F68 /* UITableViewCell+CacheKit.swift */,
+			);
+			path = "Image caches";
+			sourceTree = "<group>";
+		};
 		52D6D9721BEFF229002C0205 = {
 			isa = PBXGroup;
 			children = (
@@ -258,6 +289,7 @@
 			isa = PBXGroup;
 			children = (
 				28867E561FD531E500439260 /* CacheManager.swift */,
+				28AB29401FEAAFDE00A06F68 /* Image caches */,
 				28867DFD1FD5318400439260 /* Caches */,
 				28867DF21FD5315300439260 /* NetworkService */,
 				28867E1C1FD531A500439260 /* Configurations */,
@@ -573,7 +605,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28AB29481FEAB00300A06F68 /* UITableViewCell+CacheKit.swift in Sources */,
+				28AB29441FEAB00300A06F68 /* CodableImage.swift in Sources */,
 				28867E1F1FD531B300439260 /* DiskConfiguration.swift in Sources */,
+				28AB294C1FEAB00300A06F68 /* URL+Resource.swift in Sources */,
 				28867DF51FD5317700439260 /* NetworkService.swift in Sources */,
 				28867E351FD531C500439260 /* MD5.swift in Sources */,
 				28867E0C1FD5319300439260 /* MemoryCache.swift in Sources */,
@@ -586,6 +621,7 @@
 				28867E101FD5319300439260 /* Option.swift in Sources */,
 				28867E311FD531C500439260 /* RetrieveCacheTask.swift in Sources */,
 				28867E3D1FD531C500439260 /* Resource.swift in Sources */,
+				28AB29511FEAB0B200A06F68 /* UIImageView+CacheKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -603,7 +639,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28AB294A1FEAB00300A06F68 /* UITableViewCell+CacheKit.swift in Sources */,
+				28AB29461FEAB00300A06F68 /* CodableImage.swift in Sources */,
 				28867E211FD531B300439260 /* DiskConfiguration.swift in Sources */,
+				28AB294E1FEAB00300A06F68 /* URL+Resource.swift in Sources */,
 				28867DF71FD5317700439260 /* NetworkService.swift in Sources */,
 				28867E371FD531C500439260 /* MD5.swift in Sources */,
 				28867E0E1FD5319300439260 /* MemoryCache.swift in Sources */,
@@ -616,6 +655,7 @@
 				28867E121FD5319300439260 /* Option.swift in Sources */,
 				28867E331FD531C500439260 /* RetrieveCacheTask.swift in Sources */,
 				28867E3F1FD531C500439260 /* Resource.swift in Sources */,
+				28AB29531FEAB0B200A06F68 /* UIImageView+CacheKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -623,7 +663,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28AB294B1FEAB00300A06F68 /* UITableViewCell+CacheKit.swift in Sources */,
+				28AB29471FEAB00300A06F68 /* CodableImage.swift in Sources */,
 				28867E221FD531B300439260 /* DiskConfiguration.swift in Sources */,
+				28AB294F1FEAB00300A06F68 /* URL+Resource.swift in Sources */,
 				28867DF81FD5317700439260 /* NetworkService.swift in Sources */,
 				28867E381FD531C500439260 /* MD5.swift in Sources */,
 				28867E0F1FD5319300439260 /* MemoryCache.swift in Sources */,
@@ -636,6 +679,7 @@
 				28867E131FD5319300439260 /* Option.swift in Sources */,
 				28867E341FD531C500439260 /* RetrieveCacheTask.swift in Sources */,
 				28867E401FD531C500439260 /* Resource.swift in Sources */,
+				28AB29541FEAB0B200A06F68 /* UIImageView+CacheKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -643,7 +687,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28AB29491FEAB00300A06F68 /* UITableViewCell+CacheKit.swift in Sources */,
+				28AB29451FEAB00300A06F68 /* CodableImage.swift in Sources */,
 				28867E201FD531B300439260 /* DiskConfiguration.swift in Sources */,
+				28AB294D1FEAB00300A06F68 /* URL+Resource.swift in Sources */,
 				28867DF61FD5317700439260 /* NetworkService.swift in Sources */,
 				28867E361FD531C500439260 /* MD5.swift in Sources */,
 				28867E0D1FD5319300439260 /* MemoryCache.swift in Sources */,
@@ -656,6 +703,7 @@
 				28867E111FD5319300439260 /* Option.swift in Sources */,
 				28867E321FD531C500439260 /* RetrieveCacheTask.swift in Sources */,
 				28867E3E1FD531C500439260 /* Resource.swift in Sources */,
+				28AB29521FEAB0B200A06F68 /* UIImageView+CacheKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
